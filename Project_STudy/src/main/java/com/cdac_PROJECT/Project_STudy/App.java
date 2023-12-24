@@ -16,12 +16,16 @@ public class App {
 		try {
 
 			System.out.println("Hello World!");
+			
 			ApplicationContext context = new ClassPathXmlApplicationContext(
 					"file:src/main/java/com/cdac_PROJECT/Project_STudy/config.xml");
+			
 			bean1 b = (bean1) context.getBean("bean1");
 			System.out.println(b);
+			
 			bean1 bb = (bean1) context.getBean("bean");
 			System.out.println(bb);
+			
 			bean1 be = (bean1) context.getBean("be");
 			System.out.println(be);
 
