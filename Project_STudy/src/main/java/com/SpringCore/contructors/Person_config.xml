@@ -10,19 +10,23 @@
  http://www.springframework.org/schema/beans/spring-context.xsd">
 
 
-	<bean class="com.SpringCore.ReferenceTypeCollection.B" name="bref">
-	<property name="y" value="9000"/>
-	</bean>
+<bean class="com.SpringCore.contructors.certi" name="c">
+<constructor-arg  value="Android using kotlin" />
+</bean>
 
-	<bean class="com.SpringCore.ReferenceTypeCollection.A" name="aref" >
-		<property name="x" value="122" />
-		
-		<property name="ob" >
-			<ref bean="bref" />
-		</property>
-		
-	</bean>
+	<bean name="person" class="com.SpringCore.contructors.Person">
+	<constructor-arg>
+		<value>ANkit</value>
+	</constructor-arg>
 	
+	<constructor-arg  value="123" type="int"/>
+	<constructor-arg  ref="c" />
+		
+		</bean>
+
+
+
+
 </beans>
 
 
