@@ -18,7 +18,7 @@ public class App {
 			System.out.println("Hello World!");
 			
 			ApplicationContext context = new ClassPathXmlApplicationContext(
-					"file:src/main/java/com/cdac_PROJECT/Project_STudy/config.xml");
+					"src/main/java/SPRINGBOOT/SpringBootRevision:config.xml");
 			
 			bean1 b = (bean1) context.getBean("bean1");
 			System.out.println(b);
